@@ -274,7 +274,7 @@
             orderSummary += `\n💰 ราคารวมทั้งหมด: ${totalPrice} บาท\n\n🎉 ขอบคุณที่สั่งซื้อ!`;
 
             let message = encodeURIComponent(`${orderSummary}\n\n👤 ชื่อ: ${name}\n📞 เบอร์โทร: ${phone}\n🏡 ที่อยู่: ${address}`);
-            let lineUrl = `https://line.me/R/msg/text/?${message}`;  // ใช้ LINE API
+            let lineUrl = `https://manager.line.biz/account/@321bnfcc/broadcast${message}`;  // ใช้ LINE API
 
             window.open(lineUrl, "_blank");
 
